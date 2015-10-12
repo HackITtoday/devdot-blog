@@ -1,0 +1,9 @@
+{
+  "firebase": "devdot-blog",
+  "public": "dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
