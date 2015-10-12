@@ -78,7 +78,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <iron-icon icon="home"></iron-icon>
             <span>Blog</span>
           </a>
-
+          
+          <a data-route="events" href="/events" on-click="onDataRouteClick">
+            <iron-icon icon="home"></iron-icon>
+            <span>Events</span>
+          </a>
+          
           <a data-route="team" href="/team" on-click="onDataRouteClick">
             <iron-icon icon="info"></iron-icon>
             <span>Team</span> 
@@ -105,7 +110,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <span class="flex"></span>
 
           <!-- Toolbar icons -->
-          <paper-icon-button icon="refresh"></paper-icon-button>
           <paper-icon-button icon="search"></paper-icon-button>
 
           <!-- Application name -->
@@ -131,18 +135,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <paper-material elevation="1">
                 <p class="paper-font-body2">This is another card.</p>
               </paper-material>
-
+            </section>
+            
+            <section data-route="events">
+              <paper-material elevation="1">
+                <h2 class="page-title">Events</h2>
+                <p>Event List</p>
+                <event-list></event-list>
+              </paper-material>
             </section>
 
             <section data-route="team">
               <paper-material elevation="1">
                 <h2 class="page-title">Team</h2>
                 <p>This is the team section</p>
-                <ul>
                   <li><a href="/users/Wo">Wo King</a></li>
                   <li><a href="/users/Marcus">Marcus Hitchens</a></li>
                   <li><a href="/users/Tony">Tony Edwards</a></li>
-                </ul>
               </paper-material>
             </section>
 
@@ -154,8 +163,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <div>This is <span>{{params.name}}</span>'s section</div>
               </paper-material>
             </section>
-
-            <section data-route="contact">
+            
+             <section data-route="contact">
               <paper-material elevation="1">
                 <h2 class="page-title">Contact</h2>
                 <p>This is the contact section</p>
