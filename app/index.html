@@ -74,14 +74,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         <!-- Drawer Content -->
         <paper-menu class="list" attr-for-selected="data-route" selected="[[route]]">
-          <a data-route="home" href="/" on-click="onDataRouteClick">
+          <a data-route="blog" href="/" on-click="onDataRouteClick">
             <iron-icon icon="home"></iron-icon>
-            <span>Home</span>
+            <span>Blog</span>
           </a>
 
-          <a data-route="users" href="/users" on-click="onDataRouteClick">
+          <a data-route="team" href="/team" on-click="onDataRouteClick">
             <iron-icon icon="info"></iron-icon>
-            <span>Users</span>
+            <span>Team</span>
+          </a>
+          
+          <a data-route="about" href="/about" on-click="onDataRouteClick">
+            <iron-icon icon="mail"></iron-icon>
+            <span>About</span>
           </a>
 
           <a data-route="contact" href="/contact" on-click="onDataRouteClick">
@@ -105,7 +110,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
           <!-- Application name -->
           <div class="middle middle-container center horizontal layout">
-            <div class="app-name">Polymer Starter Kit</div>
+            <div class="app-name">dev. Hi9 Engineering Blog for Polymer</div>
           </div>
 
           <!-- Application sub title -->
@@ -153,10 +158,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
             </section>
 
-            <section data-route="users">
+            <section data-route="team">
               <paper-material elevation="1">
-                <h2 class="page-title">Users</h2>
-                <p>This is the users section</p>
+                <h2 class="page-title">Team</h2>
+                <p>This is the team section</p>
                 <a href="/users/Rob">Rob</a>
               </paper-material>
             </section>
@@ -174,6 +179,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <paper-material elevation="1">
                 <h2 class="page-title">Contact</h2>
                 <p>This is the contact section</p>
+              </paper-material>
+            </section>
+            
+            <section data-route="about">
+              <paper-material elevation="1">
+                <h2 class="page-title">About</h2>
+                <p>About</p>
               </paper-material>
             </section>
 
