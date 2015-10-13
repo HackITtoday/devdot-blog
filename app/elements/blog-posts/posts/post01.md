@@ -9,6 +9,11 @@ What Google Say and What we have learnt the hard way.
 > The Polymer library is designed to make it easier and faster for
 > developers to create great, reusable components for the modern web.
 
+It has four parts
+### Encapsulation
+
+Think local. You creat elements such as tabs or forms or inputs and all the functionality, styling and testing works inside that element. 
+
 ## What We Have Learned It Is
 
 ## Back to the Future
@@ -32,5 +37,7 @@ Well that's the power of it. Not just that it does not conflict with anything el
 ### It is a framework and not a library. It is not like Angular but Angular 2.0 is become like it
 
 This you have to be very clear on. A framework to me is a set of rules. Behaviours. That have to be done. It can be created by the tool that my colleague Marcus built at open-elements.org. Just by clicking some buttons and filling in some boxes. That is something you can't do with a library. Of course you can then add funcitionality to it and creating your own elements takes Javascript understand also but yes it's not a new collection of coding it's a coding system. 
+
+Saying that, do not try and use Polymer with Angular 1.3. We have not tried it with 2.0 but we have suffered in trying to use it with 1.3. They hate each other.
 
 
