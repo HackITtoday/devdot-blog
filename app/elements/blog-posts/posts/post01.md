@@ -29,5 +29,8 @@ and tabs which are designed and which just work on any screen and any browser ju
 Well that's the power of it. Not just that it does not conflict with anything else in the page. All the test is inside that tag that you need. It even works offline. The power of that is incredible. That is what this could lead to. A simplier world.
 
 
+### It is a framework and not a library. It is not like Angular but Angular 2.0 is become like it
 
-### It is a framework and not a library
+This you have to be very clear on. A framework to me is a set of rules. Behaviours. That have to be done. It can be created by the tool that my colleague Marcus built at open-elements.org. Just by clicking some buttons and filling in some boxes. That is something you can't do with a library. Of course you can then add funcitionality to it and creating your own elements takes Javascript understand also but yes it's not a new collection of coding it's a coding system. 
+
+
