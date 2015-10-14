@@ -11,7 +11,13 @@ What Google Say and What we have learnt the hard way.
 
 ### Encapsulation
 
-As an element it works on top of Web Components. It has something callled 'local DOM' which encapasulates the tags inside it. This means that you control the composition. Everything you see in bold are terms that the Polymer team use a lot some be clear on their meaning. An element has the DOM encapasulated and therefore cotrols the composition. Think of it like this. It's a room. The element is a conductor. The tags and javascript are the orchestrer. This element works inside itself and this is important then can expose a simple API. This element and it's API can then be used by another element which encapasulates that and uses that element in it's composition and then does the same. 
+#### Local DOM
+
+As an element it works on top of Web Components. It has something callled 'local DOM' which encapasulates the tags inside it. This means that you control the composition. Everything you see in bold are terms that the Polymer team use a lot some be clear on their meaning. An element has the DOM encapasulated and therefore cotrols the composition. 
+
+Think of it like this. 
+It's an orchestra
+The element is mediating it's one elements, dom etc (composition) like a conductor. Each element has it's own use. The violins play the violin part, the brass the brass. The API that is exposed is it's piece of music. This element then exposes it's API, the full composition of music as it's API. This element and it's API can then be used by another element which encapasulates that and uses that element in it's composition and then does the same. For instance a DJ could use the orchestra piece (API) and another element such as a beat and it then creates it's API. So on and so on.
 
 You can then use attributes to input into the Elements and then you have an Output, an API that another element can use. For example one of the best Polymer elements is this.You
 
@@ -21,7 +27,7 @@ Which creates this.
 
 **GOOGLE MAP IMAGE**
 
-As you can see all the work on Google APIs are done in the element. All it is asking is for the Attributes. It then Outputs the Map. Use expose APIs so you can change the attributes. This can be from lat, long, to behaviour such as this. You can see all this and more on our list of references and glossary page"
+As you can see all the work on Google APIs are done in the element. All it is asking is for the Attributes. It then Outputs the Map. Uselly you can expose APIs so you can change the attributes. This can be from lat, long, to behaviour such as this. You can see all this and more on our list of references and glossary page"
 
 <paper-header waterfall></paper-header>
 
@@ -29,13 +35,15 @@ or XML request identities
 
 <laterooms-ratepicker hotelid="1234" affiliateid="1234"></laterooms-ratepicker>
 
-As you can see the power of them is extrodinary.
+As you can see the power of them is extrodinary. Also that everything is **declaritive**. You can understand what is happening. You can easily share these and the new dev can easily understand what they are for. Customers can. Anyone can.
 
+#### Styling
 
-It has four parts
-### Encapsulation
+Lastly in this part the styling all works inside the element. Nothing leaks out. Now you can expose certain stlyes so you can have a theme template for colors that can very easily change the overral color scheme but the styling works inside and that is all.
 
-Think local. You creat elements such as tabs or forms or inputs and all the functionality, styling and testing works inside that element. 
+#### Data Binding
+
+They call data binding 
 
 ## What We Have Learned It Is
 
@@ -63,6 +71,9 @@ This you have to be very clear on. A framework to me is a set of rules. Behaviou
 
 Saying that, do not try and use Polymer with Angular 1.3. We have not tried it with 2.0 but we have suffered in trying to use it with 1.3. 
 
+### It's 0.9 not 1.0. 
+
+It feels and works that way. The Polymer team are incredible. I have met most of them and a finer more dedicated group you could not know. But this has been a bit rushed out. They are still working out stuff and it's not clear what the path is. Saying that. You can use it for Production but you have to know the quirks to use it right now.
 
 
 
